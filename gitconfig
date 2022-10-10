@@ -60,5 +60,10 @@
 [init]
   defaultBranch = master
 [user]
-	email = NicolasNguyen0023@hotmail.com
-	name = Nicolas Nguyen
+	email = nicolasnguyen0023@hotmail.com
+	name = Nicolas.N
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
